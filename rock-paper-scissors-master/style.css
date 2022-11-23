@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    width: 100vw;
+    height: 100%;
+    background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+.main{
+    
+        width: 100%;
+        height: 100%;
+}
+
+.navbar {
+    border: 0.2rem solid hsl(217, 16%, 45%);
+    width: 50rem;
+    height: 7rem;
+    margin: auto;
+    position: relative;
+    top: 2rem;
+    display: flex;
+    border-radius: 0.8rem;
+
+}
+
+.navtext {
+    color: hsl(0, 0%, 97%);
+    font-weight: 1000;
+    position: relative;
+    top: 0.8rem;
+
+    left: 1rem;
+
+}
+
+#score {
+    background: white;
+    position: relative;
+    left: 36rem;
+    height: 5rem;
+    width: 7rem;
+    top: 1rem;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    border-radius: 0.4rem;
+}
+
+#score p {
+    position: absolute;
+    left: 1.9rem;
+    font-size: 1rem;
+    color: hsl(229, 64%, 46%);
+    font-weight: 700;
+}
+
+#point {
+    position: relative;
+    top: 1.8rem;
+    left: 2.3000000000000007rem;
+    font-weight: 800;
+    font-size: 2.3rem;
+    color: black;
+}
+
+.playground {
+    position: relative;
+    top: 5rem;
+    left: 5rem;
+    width: 73rem;
+    background-image: url(/rock-paper-scissors-master/images/bg-pentagon.svg);
+    background-repeat: no-repeat;
+    margin: 0rem 0rem;
+    height: 26rem;
+    background-position: center;
+    background-size: auto;
+}
+
+.paper {
+    border: 1rem solid yellow;
+    width: 5rem;
+    border-radius: 50rem;
+    background-color: white;
+    position: relative;
+    bottom: 16rem;
+    left: 47rem;
+    height: 5rem;
+    top: -20rem;
+}
+
+.scissor {
+    border: 1rem solid rgb(14, 225, 169);
+    width: 5rem;
+    border-radius: 50rem;
+    background-color: white;
+    position: relative;
+    bottom: 17rem;
+    left: 32rem;
+    height: 5rem;
+    top: -24rem;
+}
+
+.lizard {
+    border: 1rem solid rgb(42, 58, 241);
+    width: 5rem;
+    border-radius: 50rem;
+    background-color: white;
+    position: relative;
+    bottom: 17rem;
+    left: 38rem;
+    height: 5rem;
+    top: -20rem;
+}
+
+.rock {
+    border: 1rem solid rgb(220, 13, 238);
+    width: 5rem;
+    border-radius: 50rem;
+    background-color: white;
+    position: relative;
+    bottom: 22rem;
+    left: 29rem;
+    height: 5rem;
+    top: -27rem;
+}
+
+.spock {
+    border: 1rem solid rgb(219, 19, 19);
+    width: 5rem;
+    border-radius: 50rem;
+    background-color: white;
+    position: relative;
+    bottom: 23rem;
+    left: 44rem;
+    height: 5rem;
+    top: -31rem;
+}
+
+
+.contest {
+    display: none;
+    width: 54rem;
+    height: 25rem;
+    position: relative;
+    top: -46rem;
+    left: 15rem;
+    /* background-image: radial-gradient(hsl(214, 47%, 23%), hsl(237, 49%, 15%)); */
+    border-width: 1rem;
+    /* border-color: linear-gradient(red, blue, green); */
+}
+
+.player {
+
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top: 3rem;
+}
+
+.contest p {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+#scorearea {
+    POSITION: RELATIVE;
+    top: -7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    width: 14rem;
+    left: 20rem;
+    text-transform: uppercase;
+}
+
+#btn {
+    position: relative;
+    left: 24rem;
+    top: -13rem;
+    padding: 1rem 1rem;
+    border-radius: 0.4rem;
+    outline: none;
+}
+
+.computer {
+
+    width: 15rem;
+    height: 15rem;
+    position: relative;
+    top: -27rem;
+    left: 39rem;
+}
+
+#house {
+    color: white;
+    text-align: center;
+    position: relative;
+    top: -26rem;
+    left: 41rem;
+    z-index: 1;
+    width: 11rem;
+}
+
+.user1 {
+    border: 1rem solid rgb(220, 13, 238);
+    width: 6rem;
+    border-radius: 50rem;
+    background-color: white;
+    height: 6rem;
+    position: relative;
+    top: -11rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cpu {
+    border: 1rem solid rgb(220, 13, 238);
+    width: 6rem;
+    border-radius: 50rem;
+    background-color: white;
+    height: 6rem;
+    position: relative;
+    top: 3rem;
+    left: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.imgpower {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.6rem;
+}
+
+.item :hover {
+    transform: translate(42px, 18px);
+    transition: 0.23s;
+
+}
+
+.powers {
+    position: relative;
+    top: 0rem;
+    left: 0rem;
+    width: 73rem;
+    background-repeat: no-repeat;
+    margin: 0rem 0rem;
+    height: 0rem;
+    background-position: center;
+}
+#rule{
+    width: 22rem;
+    height: 21rem;
+    position: relative;
+    bottom: 0;
+}
+#rulebtn{
+    padding: 0rem 2rem;
+    margin: 0rem 2rem;
+    border-radius: 0.4rem;
+
+}
+.ruleimg{
+    display: none;
+}
+
+.showItem{
+    display: "block";
+}
+
+
+@media screen and (max-width:1500px) {
+    .contest{
+        top: -43rem;
+    left: 18rem;
+
+    }
+}
+@media screen and (max-width:1400px) {
+    .contest {
+        top: -43rem;
+        left: 15rem;
+    }
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .playground {
+        background-size: 22rem;
+        left: 2rem;
+    }
+
+    #score {
+        left: 33rem;
+    }
+
+    .navtext {
+        left: 2rem;
+        ;
+    }
+
+    .navbar {
+        width: 49rem;
+        left: 4rem;
+    }
+
+    .powers {
+        left: -3rem;
+    }
+    .contest{
+        left: 12rem;
+        top: -43rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+
+    .powers {
+        left: -4rem;
+    }
+
+    .playground {
+        left: 1rem;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .imgpower {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .navbar {
+        left: 0rem;
+    }
+
+    .playground {
+        left: -7rem;
+        top: 9rem;
+    }
+    .powers{
+        left: -12rem;
+    top: 4rem;
+    }
+.contest{
+    top: -39rem;
+    left: 4rem;
+}
+}
+@media screen and (max-width:900px) {
+    .navbar {
+        left: 3rem;
+    }
+    .contest{
+        top: -39rem;
+        left: 4rem;
+    }
+}
+@media screen and (max-width:500px) {
+    
+.contest{
+    top: -39rem;
+    left: 4rem;
+}
+
+
+}
+@media screen and (max-width: 450px) {
+    .navbar {
+        left: 8rem;
+    padding: 3rem 0rem;
+    top: 12rem;
+    }
+    .navtext {
+        left: 2rem;
+        top: -2rem;
+    }
+    .navtext {
+       
+        left: 1rem;
+        font-size: 2rem;
+    }
+    #score {
+       
+        left: 25rem;
+        height: 10rem;
+        width: 12rem;
+        top: -1.4rem;
+        
+    }
+    #score p {
+       
+        font-size: 2.7rem;
+        
+        font-weight: 800;
+    }
+    #point {
+     
+        top: 2.8rem;
+        left: 4.3rem;
+        font-size: 5.3rem;
+     
+    }
+    .playground {
+        left: -4rem;
+        top: 44rem;
+    }
+    .powers {
+        left: -9rem;
+        top: 38rem;
+    }
+.contest{
+    top: -2rem;
+    left: 6rem;
+}
+#rulebtn{
+    position: relative;
+    bottom: -64rem;
+}
+}
